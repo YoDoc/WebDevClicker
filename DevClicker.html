@@ -1,0 +1,75 @@
+
+<html lang="fr">
+	<head>  <!---------------------             H E A D               ---------------------------------->
+		<meta charset="utf-8">
+		<title>WebDev Clicker</title>
+		
+		<!-- meta -->
+		<meta name="description" content="Cookie clicker like for web developers">
+		<meta name="author" content="Samuel Bouchet, Yorann">
+	</head>
+	
+	<body>  <!---------------------             B O D Y               ---------------------------------->
+    <!--
+      <ul>
+        <li>Afficher une vidéo lorsqu'on débloque une<br/>nouvelle option</li>
+        <li>Ajouter un bonus sur condition regex<br/>(si le 2eme caractère est un 2 il devient un 3)</li>
+        <li>Canvas pour visualiser la production</li>
+        <li>Rendre les données persistantes</li>
+        <li>Ajouter un feedback sur les boutons (transition)</li>
+        <li>Rendre la page responsive</li>
+        <li>Utiliser un serviceworker par type d'algorithme</li>
+      </ul>
+    -->
+    
+    <!-- TITLE -->
+		<header>
+      <h1>Webdev clicker by Yorann</h1>
+		</header>
+
+    <!-- CONTENT -->
+		
+      <div class="content">
+      <div class="block code">
+        <button  onclick="code()">Click to code_</button>
+      </div>
+      
+      <div class="save">
+        <button  onclick="saveLines()"> click to save lines</button>
+     
+        <button onclick="saveAlgo()"> click to save algo </button>
+      </div>
+    
+      
+      <div class="block">
+        You have produced <br/><span id="count">0</span> lines.
+      </div>
+      <div>
+        <canvas id='canvas1' width='120' height='80'> Canvas not supported</canvas>
+      </div>
+      
+      
+      <div class="separator"></div>
+      
+      <div id="productionunits"></div>
+    </div> 
+   
+    
+		
+    <!---------------------             F O O T E R               ---------------------------------->
+		<footer>
+      <div id="popup" class="popup" onclick="this.className='popup'">
+        <div class="block">
+          Un nouvel algorithme a été découvert !
+        </div>
+        <div class="block">
+          <video autoplay src="https://zippy.gfycat.com/WavyMeanDesertpupfish.webm" height="150" loop controls > </video>
+          <br> <br>
+          <button> GREAT !!</button>
+         </div>
+      </div>
+		</footer>
+		
+	</body>
+	
+</html>
